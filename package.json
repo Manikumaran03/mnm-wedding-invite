@@ -1,5 +1,6 @@
 {
     "name": "mnm-wedding-invite",
+    "homepage": "https://manikumaran03.github.io/mnm-wedding-invite",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -10,7 +11,7 @@
         "preview": "vite preview",
         "format": "prettier --write .",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "gsap": "^3.13.0",

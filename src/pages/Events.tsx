@@ -1,5 +1,4 @@
-import React from 'react';
-import { Clock, MapPin, Users, Music, Utensils, Camera, Calendar } from 'lucide-react';
+import { Clock, MapPin, Users, Music, Utensils, Calendar } from 'lucide-react';
 
 const Events = () => {
   const events = [

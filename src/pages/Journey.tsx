@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heart, Star, Sparkles } from 'lucide-react';
 
 const Journey = () => {

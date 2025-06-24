@@ -13,7 +13,7 @@ function Thankyou() {
   };
 
   return (
-    <div className="via-lavender-50 relative min-h-screen overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100">
+    <div className="relative flex min-h-screen items-center justify-center bg-[url('/thankyou_bg.png')] bg-cover bg-center bg-no-repeat">
       <div className="relative z-10">
         {/* Header */}
         <header
@@ -27,10 +27,10 @@ function Thankyou() {
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-purple-300"></div>
           </div>
           <h1 className="via-lavender-600 mb-2 bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text font-serif text-5xl font-bold text-transparent md:text-6xl lg:text-7xl">
-            You're Invited
+            See You There
           </h1>
           <p className="font-sans text-lg font-medium tracking-wider text-purple-600 md:text-xl">
-            Manikumaran & Manisha are tying the knot!
+            With love and gratitude, we invite you to celebrate the beginning of our forever.
           </p>
         </header>
 
@@ -121,23 +121,32 @@ function Thankyou() {
               presence is our biggest gift.
             </p>
             <div className="mt-8 flex justify-center">
-              <div className="font-serif text-xl font-medium text-purple-600">
-                Manikumaran & Manisha ♡
+              <div className="font-serif text-xl font-bold text-purple-600">
+                Manikumaran & Manisha
               </div>
             </div>
           </section>
         </main>
+        <footer className="w-full text-center text-sm text-gray-500">
+          <p>
+            Developed with 💻 + ❤️ by{' '}
+            <span className="font-semibold text-purple-600">the groom himself 👨‍💻</span>
+          </p>
+          <p className="mb-4 mt-1 italic">
+            If this app made you smile, cry, or say "wow," let me know! 😉
+          </p>
+        </footer>
       </div>
 
       {/* Floating Action Buttons */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
+      {/* <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
         <button
           onClick={scrollToTop}
           className="flex items-center gap-2 rounded-full border-none bg-purple-600/50 px-4 py-2 text-sm font-medium text-white shadow-lg transition hover:bg-purple-700/40 focus:outline-none focus:ring-0 active:outline-none active:ring-0"
         >
           <ArrowUp className="h-4 w-4" /> Top
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

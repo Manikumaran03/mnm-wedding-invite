@@ -40,7 +40,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Heart className="h-6 w-6 animate-pulse fill-current text-purple-600" />
-            <span className="bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text font-serif text-2xl font-bold text-transparent">
+            <span className="bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text font-signature text-2xl font-bold text-transparent">
               M & M
             </span>
           </div>

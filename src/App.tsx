@@ -5,6 +5,7 @@ import Events from './pages/Events';
 import Journey from './pages/Journey';
 import Gallery from './pages/Gallery';
 import Thankyou from './pages/Thankyou';
+import MusicPlayer from './components/MusicPlayer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Journey />
       <Gallery />
       <Thankyou />
+      <MusicPlayer />
     </>
   );
 }

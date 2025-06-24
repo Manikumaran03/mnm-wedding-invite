@@ -33,8 +33,13 @@ const Journey = () => {
   ];
 
   return (
-    <section id="journey" className="bg-gradient-to-br from-purple-50 to-white px-4 py-20">
-      <div className="container mx-auto">
+    <section
+      id="journey"
+      className="relative flex min-h-screen items-center justify-center bg-[url('/journey.png')] bg-cover bg-center bg-no-repeat px-4 py-20"
+    >
+      {/* Glassmorphism overlay
+      <div className="absolute inset-0 border border-white/20 bg-white/30 shadow-inner backdrop-blur-md"></div> */}
+      <div className="container z-10 mx-auto">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-serif text-4xl font-bold text-gray-800 md:text-5xl">
             Our Journey

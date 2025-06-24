@@ -143,7 +143,7 @@ const Events = () => {
 
                   {/* Mobile Layout */}
                   <div className="w-full md:hidden">
-                    <div className="transform rounded-2xl bg-white p-6 shadow-lg transition-all duration-300 hover:scale-105">
+                    <div className="transform rounded-2xl bg-white/80 p-6 shadow-lg transition-all duration-300 hover:scale-105">
                       <div
                         className={`inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r ${event.color} mb-4 text-white`}
                       >
@@ -169,7 +169,18 @@ const Events = () => {
 
                       <div className="mb-3 flex items-center space-x-2 text-purple-600">
                         <MapPin className="h-4 w-4" />
-                        <span className="font-medium">{event.location}</span>
+                        {event.mapUrl ? (
+                          <a
+                            href={event.mapUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium underline transition hover:text-purple-800"
+                          >
+                            {event.location}
+                          </a>
+                        ) : (
+                          <span className="font-medium">{event.location}</span>
+                        )}
                       </div>
 
                       <p className="text-gray-600">{event.description}</p>

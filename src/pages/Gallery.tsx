@@ -101,14 +101,17 @@ const Gallery = () => {
             {/* Close button */}
             <button
               onClick={closeModal}
-              className="absolute right-4 top-4 text-3xl font-bold text-white"
+              className="absolute right-4 top-4 z-10 rounded-full bg-white/20 p-2 text-white backdrop-blur-sm transition-colors hover:bg-white/30"
             >
-              &times;
+              <X className="h-6 w-6" />
             </button>
 
             {/* Prev button */}
-            <button onClick={prevImage} className="absolute left-4 text-4xl font-bold text-white">
-              ‹
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-2 text-white backdrop-blur-sm transition-colors hover:bg-white/30"
+            >
+              <ChevronLeft className="h-6 w-6" />
             </button>
 
             {/* Actual image */}
@@ -119,9 +122,17 @@ const Gallery = () => {
             />
 
             {/* Next button */}
-            <button onClick={nextImage} className="absolute right-4 text-4xl font-bold text-white">
-              ›
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-2 text-white backdrop-blur-sm transition-colors hover:bg-white/30"
+            >
+              <ChevronRight className="h-6 w-6" />
             </button>
+
+            {/* Image Counter */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-white/20 px-4 py-2 text-sm text-white backdrop-blur-sm">
+              {selectedImage + 1} of {images.length}
+            </div>
           </div>
         )}
       </div>

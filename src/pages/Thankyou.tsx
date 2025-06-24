@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Heart, Gift, Users, ArrowUp } from 'lucide-react';
+import { Heart, Gift, Users } from 'lucide-react';
 
 function Thankyou() {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,9 +8,9 @@ function Thankyou() {
     setIsVisible(true);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  //   const scrollToTop = () => {
+  //     window.scrollTo({ top: 0, behavior: 'smooth' });
+  //   };
 
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-[url('/thankyou_bg.png')] bg-cover bg-center bg-no-repeat">

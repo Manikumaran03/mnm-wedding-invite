@@ -130,7 +130,7 @@ function Thankyou() {
         <footer className="w-full text-center text-sm text-gray-500">
           <p>
             Developed with 💻 + ❤️ by{' '}
-            <span className="font-semibold text-purple-600">the groom himself 👨‍💻</span>
+            <span className="font-semibold text-purple-600">the bride & groom ourselves</span>
           </p>
           <p className="mb-4 mt-1 italic">
             If this app made you smile, cry, or say "wow," let me know! 😉

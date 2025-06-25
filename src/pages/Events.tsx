@@ -47,7 +47,8 @@ const Events = () => {
       address: '',
       mapUrl: '',
       location: 'A.K.R. Mahal',
-      description: 'Continue the celebration under the stars',
+      description:
+        'Your presence warms our hearts… but a full plate warms them even more. Let’s celebrate together — one bite at a time! 🍽️❤️😄',
       icon: Utensils,
       color: 'from-purple-800 to-purple-900',
     },

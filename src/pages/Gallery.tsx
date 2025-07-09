@@ -38,6 +38,10 @@ const Gallery = () => {
       src: '/mnm-wedding-invite/Gallery_8.jpg',
       alt: 'Our ring',
     },
+    {
+      src: '/mnm-wedding-invite/Gallery_9.jpg',
+      alt: 'Our ring',
+    },
   ];
 
   const openModal = (index: number) => {

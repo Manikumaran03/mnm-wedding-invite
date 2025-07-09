@@ -10,6 +10,15 @@ export default {
                 pinyonScript: ['"Pinyon Script"', 'cursive'], // Clean, elegant, more condensed script
                 greatVibes: ['"Great Vibes"', 'cursive'], // Elegant, flowing script
             },
+            keyframes: {
+                fadeInScale: {
+                    '0%': { opacity: '0', transform: 'scale(0.95)' },
+                    '100%': { opacity: '1', transform: 'scale(1)' },
+                },
+            },
+            animation: {
+                fadeInScale: 'fadeInScale 0.3s ease-out forwards', // 0.3 seconds, ease-out timing, retains final state
+            },
         },
     },
     plugins: [],

@@ -1,5 +1,4 @@
 import './App.css';
-import React, { useState } from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Events from './pages/Events';
@@ -10,15 +9,6 @@ import MusicPlayer from './components/MusicPlayer';
 import ChatbotMessenger from './components/ChatbotMessenger';
 
 function App() {
-  const [showChatbot, setShowChatbot] = useState(false);
-
-  const toggleChatbot = () => {
-    setShowChatbot(!showChatbot);
-  };
-
-  const handleChatbotClose = () => {
-    setShowChatbot(false); // Update state when chatbot closes itself
-  };
   return (
     <div className="App">
       <Header />

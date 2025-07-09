@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Heart, BotMessageSquare } from 'lucide-react';
+import { Menu, X, Heart } from 'lucide-react';
 import { navItems } from '../config/config';
 
 const Header: React.FC = () => {

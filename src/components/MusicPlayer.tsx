@@ -41,7 +41,7 @@ const MusicPlayer: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-9 left-4 z-50">
       <audio
         ref={audioRef}
         src="/mnm-wedding-invite/wedding_music.mp3"

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Heart } from 'lucide-react';
+import { Menu, X, Heart, BotMessageSquare } from 'lucide-react';
+import { navItems } from '../config/config';
 
-const Header = () => {
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -13,13 +14,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Events', href: '#events' },
-    { label: 'Journey', href: '#journey' },
-    { label: 'Gallery', href: '#gallery' },
-  ];
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -45,27 +39,38 @@ const Header = () => {
             </span>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden items-center space-x-8 md:flex">
-            {navItems.map((item) => (
-              <button
-                key={item.label}
-                onClick={() => scrollToSection(item.href)}
-                className="group relative font-medium text-gray-700 transition-colors duration-300 hover:text-purple-600"
-              >
-                {item.label}
-                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
-              </button>
-            ))}
-          </div>
+          <div className="flex space-x-4">
+            {/* Language Toggle */}
+            {/* <button
+              onClick={onToggleChatbot}
+              className="rounded-full bg-purple-600/50 p-3 shadow-md transition hover:bg-purple-600/80" // Added relative and overflow-hidden
+              aria-label={'chat-bot'}
+            >
+              <BotMessageSquare className="h-6 w-6" />
+            </button> */}
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2 text-gray-700 transition-colors hover:text-purple-600 md:hidden"
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+            {/* Desktop Navigation */}
+            <div className="hidden items-center space-x-8 md:flex">
+              {navItems.map((item) => (
+                <button
+                  key={item.label}
+                  onClick={() => scrollToSection(item.href)}
+                  className="group relative font-medium text-gray-700 transition-colors duration-300 hover:text-purple-600"
+                >
+                  {item.label}
+                  <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                </button>
+              ))}
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-gray-700 transition-colors hover:text-purple-600 md:hidden"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

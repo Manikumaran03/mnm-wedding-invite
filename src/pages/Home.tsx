@@ -1,5 +1,6 @@
 import { Calendar, MapPin, Heart } from 'lucide-react';
 import { useCountdown } from '../hooks/useCountdown';
+import { names } from '../config/config';
 
 const Home = () => {
   const weddingDate = '2025-09-04T09:00:00';
@@ -50,7 +51,7 @@ const Home = () => {
             </p>
 
             <h1 className="font-alexBrush text-5xl font-bold leading-tight text-purple-950 md:text-7xl">
-              Manikumaran & Manisha
+              {`${names.groom} & ${names.bride}`}
             </h1>
             <p className="mt-2 text-lg font-light italic lg:text-white">
               Tying the knot and writing our forever story 💍

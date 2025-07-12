@@ -22,7 +22,7 @@ function App() {
       {/* Render the ChatbotMessenger component conditionally */}
       <ChatbotMessenger
         agentId="992a81f8-858f-41d6-9945-bb770faf3bfc" // <--- IMPORTANT: Replace with your actual Agent ID
-        chatTitle="KnotBot - Our Wedding Whisperer 💍💬"
+        chatTitle="KnotBot💍💬"
       />
     </div>
   );

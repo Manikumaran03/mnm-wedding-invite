@@ -41,11 +41,11 @@ const Snackbar: React.FC<SnackbarProps> = ({ message, onClose }) => {
   return (
     <div
       ref={snackbarRef}
-      className="fixed bottom-8 left-1/2 z-50 flex w-[60%] max-w-md -translate-x-1/2 transform items-center rounded-xl border border-gray-200 bg-violet-300 px-4 py-3 shadow-lg"
+      className="fixed bottom-2 left-1/2 z-50 flex w-[60%] max-w-md -translate-x-1/2 transform items-center rounded-xl border border-gray-200 bg-violet-950 px-4 py-3 shadow-lg"
     >
-      <div className="flex-grow text-sm text-gray-800">{message}</div>
+      <div className="flex-grow text-xs text-gray-50">{message}</div>
 
-      <ArrowRight className="ml-4 h-6 w-6 text-gray-700" />
+      <ArrowRight className="ml-4 h-12 w-12 text-gray-50" />
     </div>
   );
 };

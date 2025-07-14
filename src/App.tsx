@@ -38,7 +38,7 @@ function App() {
       />
       {showSnackbar && (
         <Snackbar
-          message="💬 Need the when, where, and what? Our chatbot has you covered — tap the bot 🤖✨"
+          message="🫢 Psst...  the bot knows everything about the big day! Tap the icon to the right"
           onClose={() => setShowSnackbar(false)}
         />
       )}

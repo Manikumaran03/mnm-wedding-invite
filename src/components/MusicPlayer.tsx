@@ -4,17 +4,19 @@ import { Play, Pause } from 'lucide-react';
 const MusicPlayer: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [isMuted, setIsMuted] = useState<boolean>(true);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (audio) {
       audio.volume = 0.1;
+      audio.muted = true;
 
-      // Attempt to autoplay
       const tryPlay = async () => {
         try {
           await audio.play();
           setIsPlaying(true);
+          console.log(isMuted);
         } catch (err) {
           console.warn('Autoplay was blocked. Awaiting user interaction.');
           setIsPlaying(false);
@@ -33,6 +35,8 @@ const MusicPlayer: React.FC = () => {
       audio.pause();
       setIsPlaying(false);
     } else {
+      audio.muted = false;
+      setIsMuted(false);
       audio
         .play()
         .then(() => setIsPlaying(true))
@@ -48,13 +52,25 @@ const MusicPlayer: React.FC = () => {
         autoPlay
         loop
         preload="auto"
+        muted
       />
       <button
         onClick={togglePlay}
-        className="rounded-full bg-purple-600/50 p-3 shadow-md transition hover:bg-purple-600/80"
+        className={`relative rounded-full p-3 shadow-md transition ${isPlaying ? 'bg-purple-600/50 hover:bg-purple-600/80' : 'bg-purple-400/60 hover:bg-purple-500/80'} `}
         aria-label={isPlaying ? 'Pause music' : 'Play music'}
       >
-        {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
+        {/* Pulsating ring when not playing */}
+        {!isPlaying && (
+          <span
+            className="absolute -inset-1 animate-ping rounded-full bg-purple-500/40"
+            aria-hidden="true"
+          />
+        )}
+        {isPlaying ? (
+          <Pause className="h-5 w-5 text-white" />
+        ) : (
+          <Play className="h-5 w-5 text-white" />
+        )}
       </button>
     </div>
   );

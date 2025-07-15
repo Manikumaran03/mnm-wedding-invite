@@ -7,7 +7,7 @@ const Events = () => {
       date: 'Sep 04, 2025',
       time: '9:00 AM',
       duration: '1.5 hours',
-      location: 'Vadapalai Murugan Temple',
+      location: 'Arulmigu Vadapalani Andavar Temple',
       address: '',
       mapUrl: 'https://g.co/kgs/y8gw4oH',
       description: 'As we tie the sacred knot, your love and blessings mean a lot! 💍🙏❤️',
@@ -19,9 +19,10 @@ const Events = () => {
       date: 'Sep 04, 2025',
       time: '9:30 AM',
       duration: '1 hour',
-      location: 'TBA',
-      address: '',
-      mapUrl: '',
+      location: 'Gopal Thirumana Mandapam, Vadapalani (Vaariyaar Catering Service)',
+      address:
+        '51/1, Arulmigu Vadapalani Murugan Temple North Mada Street, Vadapalani, Chennai, Tamil Nadu 600026 (Temple backside)',
+      mapUrl: 'https://share.google/zetuR1yKMrWYOzP8I',
       description: 'We want your heartfelt blessings… and empty plates at the end! ❤️🍴',
       icon: Utensils,
       color: 'from-purple-600 to-purple-700',
@@ -32,7 +33,8 @@ const Events = () => {
       time: '7:00 PM',
       duration: '3 hours',
       location: 'A.K.R. Mahal',
-      address: '',
+      address:
+        '156A/28, Kaliamman Koil St, Balambiga Nagar, Virugambakkam, Chennai, Tamil Nadu 600092',
       mapUrl: 'https://g.co/kgs/S4dmnXt',
       description:
         'Marriage complete, but hold that thought — Reception’s here, with memories to be caught! 📸💖',

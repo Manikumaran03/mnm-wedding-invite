@@ -171,7 +171,7 @@ const Events = () => {
                       </div>
 
                       <div className="mb-3 flex items-center space-x-2 text-purple-600">
-                        <MapPin className="h-4 w-4" />
+                        <MapPin className="h-6 w-6" />
                         {event.mapUrl ? (
                           <a
                             href={event.mapUrl}

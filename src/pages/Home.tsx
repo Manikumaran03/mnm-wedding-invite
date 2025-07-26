@@ -66,7 +66,10 @@ const Home = () => {
                     💍 Wedding
                     <div className="flex justify-end gap-2 py-4 font-mono text-sm text-white">
                       {weddingCountdown.isComplete ? (
-                        <span>The big day was magical — thank you for being part of it! 💖</span>
+                        <span className="text-black">
+                          We’re officially hitched, forever grateful, and still smiling because of
+                          you — thanks for being there! 💍😊❤️
+                        </span>
                       ) : (
                         <>
                           <div className="rounded-md bg-violet-400 px-2 py-1">
@@ -112,7 +115,10 @@ const Home = () => {
                     🎉 Reception
                     <div className="flex justify-start gap-2 py-4 font-mono text-sm text-white">
                       {receptionCountdown.isComplete ? (
-                        <span>The celebration was unforgettable — we felt your love! 🎊</span>
+                        <span className="text-black">
+                          Reception’s done, it was a blast — if you missed it, you seriously missed
+                          out! 🎉💃😄 But we still love you! ❤️
+                        </span>
                       ) : (
                         <>
                           <div className="rounded-md bg-violet-400 px-2 py-1">

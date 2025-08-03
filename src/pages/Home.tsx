@@ -99,7 +99,7 @@ const Home = () => {
                 <div className="flex items-center space-x-3 lg:text-purple-800">
                   <MapPin className="h-6 w-6" />
                   <div>
-                    <p className="font-semibold">Vadapalani Murugan Temple</p>
+                    <p className="font-semibold">Vadapalani Murugan Temple (Pillar no. 20)</p>
                     <p className="text-sm">Vadapalani, Chennai</p>
                   </div>
                 </div>
